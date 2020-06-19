@@ -1,0 +1,27 @@
+#include<stdio.h>
+int sum_of_digit(int n)
+{
+    if(n!=0)
+    {
+    
+    	return (n%10 + sum_of_digit(n/10));                        //Function
+    	
+    	
+    }
+	
+
+	
+}
+int main()
+{
+	int x;
+	
+	/*Input any number from the user*/
+	
+	printf("Enter elements = ");
+	scanf("%d",&x);
+   printf("Result=%d",sum_of_digit(x));                           //Function calling
+	
+
+	return 0;
+}
